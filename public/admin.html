@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Blogg Webbplats</h1>
+    <div id="container">
+        <div id="logout">
+            <form action="/logout" method="POST">
+                <button type="submit">Logga ut</button>
+            </form>
+        </div>
+        <div id="create">
+            <h2>Skapa ett blogginlägg</h2>
+            <form action="/create" method="POST" enctype="multipart/form-data">
+                <label for="title">Titel:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="description">Beskrivning:</label>
+                <textarea id="description" name="description" rows="10" required></textarea>
+                <label for="image">Bild:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                <button type="submit">Publicera</button>
+            </form>
+        </div>
+        <div id="posts">
+            <h2>Blogginlägg</h2>
+            <ul id="post-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#login, #register {
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}

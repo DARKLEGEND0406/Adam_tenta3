@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Blogg Webbplats</h1>
+    <div id="container">
+        <div id="login">
+            <h2>Logga in</h2>
+            <form action="/login" method="POST">
+                <label for="username">Användarnamn:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Lösenord:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Logga in</button>
+            </form>
+        </div>
+        <div id="register">
+            <h2>Registrera dig</h2>
+            <form action="/register" method="POST">
+                <label for="username">Användarnamn:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Lösenord:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="role">Roll:</label>
+                <select id="role" name="role" required>
+                    <option value="ADMIN">ADMIN</option>
+                    <option value="USER">USER</option>
+                </select>
+                <button type="submit">Registrera dig</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
